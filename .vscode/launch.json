@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TwoSumSolution",
+            "request": "launch",
+            "mainClass": "TwoSumSolution",
+            "projectName": "LeetcodeSolutions_14b4a10a"
+        }
+    ]
+}

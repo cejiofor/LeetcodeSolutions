@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - LongestSubstringSolution",
+            "request": "launch",
+            "mainClass": "LongestSubstringSolution",
+            "projectName": "LeetcodeSolutions_14b4a10a"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - TwoSumSolution",
             "request": "launch",
             "mainClass": "TwoSumSolution",

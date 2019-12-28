@@ -41,4 +41,47 @@ class AddTwoNumbersSolution {
          
         return sumListNode;
     }
+
+    // A BETTER SOLUTION
+    // public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+        
+    //     ListNode lst = null;
+        
+    //     ListNode templ1 = l1;
+    //     ListNode templ2 = l2;
+    //     ListNode templst = lst;
+        
+    //     int nextCarry = 0;
+        
+    //     while(null != templ1 || null != templ2 || nextCarry > 0) {
+    //         int sum = 0;
+    //         if(null != templ1) {
+    //             sum += templ1.val;
+    //             templ1 = templ1.next;
+    //         }
+    //         if(null != templ2) {
+    //             sum += templ2.val;
+    //             templ2 = templ2.next;
+    //         }
+            
+    //         sum += nextCarry;
+    //         nextCarry = 0;
+            
+    //         if(sum > 9) {
+    //             sum = sum % 10;
+    //             nextCarry = 1;
+    //         }
+    //         ListNode newNode = new ListNode(sum);
+    //         if(null == templst) {
+    //             lst = newNode;
+    //             templst = newNode;
+    //         } else {
+    //             templst.next = newNode;
+    //             templst = newNode;
+    //         }
+    //     }
+        
+    //     return lst;
+        
+    // }
 }

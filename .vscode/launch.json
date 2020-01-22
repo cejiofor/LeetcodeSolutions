@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - RomanToIntSolution",
+            "request": "launch",
+            "mainClass": "RomanToIntSolution",
+            "projectName": "LeetcodeSolutions_14b4a10a"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Solution",
             "request": "launch",
             "mainClass": "Solution",

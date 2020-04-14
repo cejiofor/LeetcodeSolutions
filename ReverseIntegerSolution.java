@@ -1,3 +1,5 @@
+package com.leetcode;
+
 public class ReverseIntegerSolution {
 //     public int reverse(int x) {
 //         String xAsString = ""+x;

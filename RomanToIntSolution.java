@@ -1,3 +1,5 @@
+package com.leetcode;
+
 class RomanToIntSolution {
     public static int romanToInt(String s) {
         char current = ' ';

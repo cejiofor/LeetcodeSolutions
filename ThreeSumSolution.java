@@ -36,7 +36,7 @@ public class ThreeSumSolution {
                     System.out.println(Arrays.toString(sln));
                     slnSet.add(Arrays.stream(sln).boxed().collect(Collectors.toList()));
                 }
-                else
+                else{}
             }
 
             //Remove if count is zero
@@ -53,21 +53,21 @@ public class ThreeSumSolution {
 
     }
 
-    public int[] remover(int num, Map map) {
-        if (map.keySet().contains(num*-1)) {
-            if (map.keySet().contains(0)) {
-                a = num;
-                b = num*-1;
-                c = 0;
-
-                map.put(a, map.get(a) - 1);
-                map.put(b, map.get(b) - 1);
-                map.put(c, map.get(c) - 1);
-                int[] sln = new int[]{a, b, c};
-                System.out.println(Arrays.toString(sln));
-                slnSet.add(Arrays.stream(sln).boxed().collect(Collectors.toList()));
-            }
-    }
+//    public int[] remover(int num, Map map) {
+//        if (map.keySet().contains(num*-1)) {
+//            if (map.keySet().contains(0)) {
+//                a = num;
+//                b = num*-1;
+//                c = 0;
+//
+//                map.put(a, map.get(a) - 1);
+//                map.put(b, map.get(b) - 1);
+//                map.put(c, map.get(c) - 1);
+//                int[] sln = new int[]{a, b, c};
+//                System.out.println(Arrays.toString(sln));
+//                slnSet.add(Arrays.stream(sln).boxed().collect(Collectors.toList()));
+//            }
+//    }
 
     public static void main(String[] args) {
         new ThreeSumSolution().threeSum(new int[]{-1, 0, 1, 2, -1, -4});

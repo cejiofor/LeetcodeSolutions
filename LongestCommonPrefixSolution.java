@@ -1,7 +1,10 @@
 package com.leetcode;
 
 public class LongestCommonPrefixSolution {
-
+    /*
+    * Write a function to find the longest common prefix string amongst an array of strings.
+    * If there is no common prefix, return an empty string "".
+    * */
     public static String longestCommonPrefix(String[] strs){
         int arrLength = strs.length;
         if(arrLength == 0){

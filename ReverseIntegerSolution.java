@@ -1,6 +1,9 @@
 package com.leetcode;
 
 public class ReverseIntegerSolution {
+    /*
+    * Given a 32-bit signed integer, reverse digits of an integer.
+    * */
 //     public int reverse(int x) {
 //         String xAsString = ""+x;
 //         int reversedX = 0;

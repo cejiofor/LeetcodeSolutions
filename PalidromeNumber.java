@@ -1,6 +1,10 @@
 package com.leetcode;
 
 public class PalidromeNumber {
+    /*
+    * Determine whether an integer is a palindrome.
+    * An integer is a palindrome when it reads the same backward as forward.
+    * */
     public static boolean isPalindromeOne(int x){
         String num = ""+x;
         StringBuilder sb = new StringBuilder(num);

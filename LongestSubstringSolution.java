@@ -3,6 +3,9 @@ package com.leetcode;
 import java.util.HashSet;
 
 class LongestSubstringSolution {
+    /*
+    * Given a string s, find the length of the longest substring without repeating characters.
+    * */
     public int lengthOfLongestSubstring(String s) {
         int length = 0;
         int maxLength = 0;

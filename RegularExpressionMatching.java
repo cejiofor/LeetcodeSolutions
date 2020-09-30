@@ -1,6 +1,10 @@
 package com.leetcode;
 
 public class RegularExpressionMatching {
+    /*
+    * Given an input string (s) and a pattern (p),
+    * implement regular expression matching with support for '.' and '*'.
+    * */
     public boolean isMatch(String s, String p){
         StringBuilder sb = new StringBuilder();
         sb.append("^");

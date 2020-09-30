@@ -1,6 +1,11 @@
 package com.leetcode;
 
 class RomanToIntSolution {
+    /*
+    * Given a roman numeral, convert it to an integer.
+    * Input is guaranteed to be within the range from 1 to 3999.
+    * */
+
     public static int romanToInt(String s) {
         char current = ' ';
         char next = ' ';

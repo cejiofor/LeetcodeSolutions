@@ -1,6 +1,14 @@
 package com.leetcode;
 
 public class WaterContainerSolution {
+    /*
+    * Given n non-negative integers a1, a2, ..., an ,
+    * where each represents a point at coordinate (i, ai).
+    * n vertical lines are drawn such that the two endpoints of line i is at (i, ai) and (i, 0).
+    *
+    * Find two lines, which together with x-axis forms a container,
+    * such that the container contains the most water.
+    * */
     public int maxArea(int[] height) {
         int h1 = 0, h2 = height.length - 1, area = 0;
         int maxArea = Math.abs(h2 - h1) * Math.min(height[h2], height[h1]);

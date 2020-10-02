@@ -45,5 +45,27 @@ public class NthNodeRemoval {
         return currNode;
     }
 
+    public ListNode removeNthFromEndOne(ListNode head, int n) {
+        ListNode newHead = new ListNode();
+        newHead.next = head;
+        ListNode fastNode = newHead;
+        ListNode slowNode = newHead;
+
+        //Move curr head to start at n
+        int i = 0;
+        while (i<n){
+            fastNode = fastNode.next;
+            i++;
+        }
+
+        while (fastNode.next != null){
+            fastNode = fastNode.next;
+            slowNode = slowNode.next;
+        }
+        slowNode.next = slowNode.next.next;
+
+        return newHead.next;
+    }
+
 
 }

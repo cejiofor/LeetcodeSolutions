@@ -3,38 +3,53 @@ package com.leetcode;
 public class MergeSortedLists {
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
         ListNode newHead = new ListNode();
+        ListNode curr = new ListNode();
         ListNode p1 = l1;
         ListNode p2 = l2;
-        if (l1.val <= l2.val) {
-            newHead = p1;
+
+        if (l1 == null && l2 == null){
+            return l1;
+        } else if (l2 == null){
+            return l1;
+        } else if (l1 == null){
+            return l2;
+        } else if (l1.val <= l2.val) {
+            curr = new ListNode(p1.val);
             p1 = p1.next;
         } else{
-            newHead = p2;
+            curr = new ListNode(p2.val);
             p2 = p2.next;
         }
 
-        ListNode curr = newHead.next;
-
-
-        while (p1.next != null && p2.next != null) {
-            if (p1 == null) {
-                curr = p2;
-                p2 = p2.next;
-            } else if (p2 == null) {
-                curr = p1;
-                p1 = p1.next;
+        newHead = curr;
+        // System.out.println(p2.val);
+        while (p1 != null && p2 != null) {
+            // System.out.println(curr.val);
+            // System.out.println("p1 " +p1.val);
+            // System.out.println("p2 " +p2.val);
+            // if (p1 == null) {
+            //     curr.next = new ListNode(p2.val);
+            //     p2 = p2.next;
+            // }
+            if (p1.next == null) {
+                curr.next = p1;
+            }
+            if (p2.next == null) {
+                curr.next = p2;
             } else{
                 if (p1.val <= p2.val) {
-                    curr = p1;
+                    curr.next = new ListNode(p1.val);
                     p1 = p1.next;
-                } else {
-                    curr = p2;
+
+                    System.out.println("end "+curr.next.val);
+                } else{
+                    curr.next = new ListNode(p2.val);
                     p2 = p2.next;
                 }
             }
-            newHead.next = curr;
             curr = curr.next;
         }
+
         return newHead;
     }
 
